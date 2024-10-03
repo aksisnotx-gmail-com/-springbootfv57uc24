@@ -1,0 +1,84 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+.test/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+.mvn/
+test/
+test/*
+# But not empty folders
+!*/
+
+
+
+
+
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/jarRepositories.xml
+/logs/snowy-web-app-log/log_error.log
+/logs/snowy-web-app-log/log_total.log
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+
+# 排除Spring Boot项目的test、target文件夹及所有文件夹下的文件
+**/test/
+**/target/
+
+# 排除前端项目的node_modules文件夹及所有文件夹下的文件
+**/node_modules/
+/fron-end/package-lock.json
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/dataSources/c1cacfc0-45b0-4db4-9fa8-2e3ec7cc18e6.xml
+/.idea/dataSources/c1cacfc0-45b0-4db4-9fa8-2e3ec7cc18e6/storage_v2/_src_/schema/chat_hub.juuxVQ.meta
+/.idea/dataSources.local.xml
+/.idea/deployment.xml
+/.idea/webServers.xml
+/.idea/shelf/_2024_5_16_9_31____.xml
+/.idea/dataSources.xml
+/front-end/package-lock.json
+/.idea/shelf/在进行更新之前于_2024_5_16_下午9_31_取消提交了更改_[更改]/shelved.patch
+/.idea/shelf/在进行更新之前于_2024_5_16_下午9_31_取消提交了更改_[更改]/shelved.patch
+/front-end/dist/
+/.idea/dataSources/c1cacfc0-45b0-4db4-9fa8-2e3ec7cc18e6/storage_v2/_src_/schema/picture_bed.wFkqtA.meta
+/.idea/shelf/_2024_6_21_9_07____.xml
+/.idea/GitCommitMessageStorage.xml
+/.idea/shelf/_2024_9_4_12_44____.xml
+/.idea/shelf/在进行签出之前于_2024_9_4_上午12_44_取消提交了更改_[更改]/shelved.patch
+/.idea/shelf/在进行签出之前于_2024_9_4_上午12_44_取消提交了更改_[更改]1/shelved.patch
+/.idea/dataSources/43d26cf7-6a3a-43f6-b0f6-cb6023615170.xml
+/.idea/dataSources/2cddf812-4eb2-462f-b568-8f51f74a7e10.xml
