@@ -53,7 +53,7 @@ public class RenwufenpeiController {
 	@Autowired
 	private HttpServletRequest request;
 
-	@PostMapping("transactionStatistics")
+	@GetMapping("transactionStatistics")
 	public R transactionStatistics() {
 		HashMap<String, Integer> hashMap = new HashMap<>();
 		List<RenwufenpeiEntity> entities = renwufenpeiService.selectList(null);

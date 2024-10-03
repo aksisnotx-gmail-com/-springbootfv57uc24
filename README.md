@@ -128,4 +128,4 @@
 
 | METHOD | PATH             | 
 |--------|------------------|
-| POST   |  |
+| GET    | renwufenpei/transactionStatistics |
