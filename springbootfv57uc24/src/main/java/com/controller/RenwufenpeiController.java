@@ -18,11 +18,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.annotation.IgnoreAuth;
@@ -50,10 +46,24 @@ import java.io.IOException;
 @RestController
 @RequestMapping("/renwufenpei")
 public class RenwufenpeiController {
+
     @Autowired
     private RenwufenpeiService renwufenpeiService;
 
+	@Autowired
+	private HttpServletRequest request;
 
+	@PostMapping("transactionStatistics")
+	public R transactionStatistics() {
+		HashMap<String, Integer> hashMap = new HashMap<>();
+		List<RenwufenpeiEntity> entities = renwufenpeiService.selectList(null);
+		//任务时间是否超过当前时间
+		long count = entities.stream().filter(t -> t.getWanchengriqi().before(new Date())).count();
+		hashMap.put("totalNumberOfTasks", entities.size());
+		hashMap.put("timeoutTask", (int) count);
+		hashMap.put("notTimeoutTask", (int) (entities.size() - count));
+		return R.ok().put("data",hashMap);
+	}
 
 
     
