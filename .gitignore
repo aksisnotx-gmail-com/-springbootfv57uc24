@@ -36088,3 +36088,5 @@ test/*
 /springbootfv57uc24/src/main/resources/admin/admin/node_modules/zrender/package.README.md
 /springbootfv57uc24/src/main/resources/admin/admin/node_modules/zrender/README.md
 /springbootfv57uc24/src/main/resources/admin/admin/node_modules/zrender/tsconfig.json
+
+!springbootfv57uc24/src/main/resources/admin/admin/src/assets/img/test/
